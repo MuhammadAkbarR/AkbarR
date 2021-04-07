@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/abun"
+            android:id="@+id/abun"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:layout_below="@+id/abun"
+            android:text="Login"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/login"
+            android:hint="Username"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/username"
+            android:hint="Password"
+            android:layout_marginTop="25dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnmasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:onClick="Masuk"
+            android:text="Masuk"
+            android:textSize="19dp"
+            android:background="@color/white"/>
+<!--        <TextView-->
+<!--            android:id="@+id/txtcreateaccount"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/btnmasuk"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="Create Account?"-->
+<!--            android:layout_margin="30dp"-->
+<!--            android:layout_marginRight=""-->
+<!--            />-->
+    </RelativeLayout>
